@@ -27,3 +27,26 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+// Homework:
+const galleryElement = document.querySelector('.gallery');
+
+const fragment = document.createDocumentFragment();
+
+images.forEach(image => {
+
+  const liElem = document.createElement('li');
+  const imgElem = document.createElement('img');
+
+  imgElem.src = image.url;
+  imgElem.alt = image.alt;
+    liElem.appendChild(imgElem);
+  
+  fragment.appendChild(liElem);
+});
+
+if (galleryElement) {
+  galleryElement.appendChild(fragment);
+} else {
+  console.error("Gallery element not found");
+}
