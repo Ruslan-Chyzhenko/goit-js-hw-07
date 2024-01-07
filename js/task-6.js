@@ -22,8 +22,8 @@ for (let i = 0; i < amount; i++) {
   const size = 30 + i * 10;
   const color = getRandomHexColor();
 
-  box.style.width = '${ size } px';
-  box.style.height = '${ size } px';
+  box.style.width = `${ size } px`;
+  box.style.height = `${ size } px`;
   box.style.backgroundColor = color;
 
   boxesContainer.appendChild(box);
