@@ -232,7 +232,7 @@ button[data-destroy] {
 }
 
 #controls input {
-  width: 150px;
+  width: 250px;
   height: 40px;
   display: flex;
   padding: 8px 72px;
